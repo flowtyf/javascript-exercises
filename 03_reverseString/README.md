@@ -10,3 +10,10 @@ You will notice in this exercise that there are multiple tests, after making the
 
 ## Hints
 Strings in JavaScript cannot be reversed directly so you're going to have to split it into something else first.. do the reversal and then join it back together into a string.
+
+###
+1. split string,
+2. declare empty array for reverse
+3. iterate through array, pop last item
+4. array = array without popped item
+5. reverse array = reverse array + popped item
