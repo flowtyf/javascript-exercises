@@ -1,10 +1,11 @@
-const removeFromArray = function (array, ...value) {
-  let arr = arguments[0];
-  for (const values of value) {
-    let index = arr.indexOf(values);
-    arr.splice(index, 1);
-  }
-  return arr;
+const removeFromArray = function (array, ...args) {
+  let newArr = [];
+  array.forEach((item) => {
+    if (!args.includes(item)) {
+      newArr.push(item);
+    }
+  });
+  return newArr;
 };
 
 // Do not edit below this line
